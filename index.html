@@ -1,194 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grow CRM SaaS Presentation</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-* { font-family: 'Inter', sans-serif; margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior: smooth; scroll-snap-type: y mandatory; }
-body { overflow-x:hidden; }
-.slide { height:100vh; scroll-snap-align:start; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:1rem; }
-.gradient-primary { background: linear-gradient(135deg, #6B46C1 0%, #A78BFA 50%, #F3E8FF 100%); }
-.gradient-dark { background: linear-gradient(135deg, #1A202C 0%, #2D3748 100%); }
-.glass-card { background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); border:1px solid rgba(255,255,255,0.2); border-radius:1rem; padding:1.5rem; text-align:center; transition:all 0.3s ease-in-out; }
-.feature-hover:hover { transform:translateY(-10px) scale(1.05); }
-ul { list-style-type: disc; padding-left:1.5rem; }
-img { border-radius:1rem; }
-</style>
-</head>
-<body class="bg-gray-900 text-white">
-
-<!-- SLIDE 1: COVER -->
-<section class="slide gradient-primary text-center p-4 sm:p-12">
-  <h1 class="text-5xl sm:text-7xl md:text-8xl font-black mb-6 sm:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-100 to-white">GROW CRM SaaS</h1>
-  <p class="text-lg sm:text-3xl mb-6 sm:mb-12">All-in-One CRM & Project Management Platform</p>
-  <div class="flex flex-wrap justify-center gap-4 text-sm sm:text-lg">
-    <span class="px-4 py-2 sm:px-6 sm:py-3 bg-white/20 rounded-xl backdrop-blur-sm border border-white/30">📌 SaaS</span>
-    <span class="px-4 py-2 sm:px-6 sm:py-3 bg-white/20 rounded-xl backdrop-blur-sm border border-white/30">Multi-Tenant</span>
-    <span class="px-4 py-2 sm:px-6 sm:py-3 bg-white/20 rounded-xl backdrop-blur-sm border border-white/30">Laravel</span>
-  </div>
-</section>
-
-<!-- SLIDE 2: THE PROBLEM -->
-<section class="slide flex flex-col sm:flex-row items-center gap-8 p-4 sm:p-12">
-  <div class="sm:w-1/2 space-y-6">
-    <h2 class="text-3xl sm:text-5xl font-bold">THE PROBLEM</h2>
-    <p class="text-base sm:text-lg opacity-80">Fragmented workflows = Lost time & revenue</p>
-    <div class="space-y-4">
-      <div class="flex items-start gap-4 p-4 glass-card"><i class="fas fa-shuffle text-2xl sm:text-4xl mt-1"></i> Using MULTIPLE tools (CRM + Projects + Billing)</div>
-      <div class="flex items-start gap-4 p-4 glass-card"><i class="fas fa-users-slash text-2xl sm:text-4xl mt-1"></i> Poor TEAM Collaboration</div>
-      <div class="flex items-start gap-4 p-4 glass-card"><i class="fas fa-file-invoice-dollar text-2xl sm:text-4xl mt-1"></i> Manual invoicing & tracking</div>
-      <div class="flex items-start gap-4 p-4 glass-card"><i class="fas fa-database text-2xl sm:text-4xl mt-1"></i> SCATTERED client data</div>
+<!-- SLIDE 10: BILLING SYSTEM -->
+<section class="slide gradient-dark text-white p-16 flex flex-col items-center">
+  <h2 class="text-6xl font-black mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-200">
+    AUTOMATED BILLING
+  </h2>
+  <div class="grid md:grid-cols-2 gap-16 max-w-6xl w-full">
+    <div class="flex flex-col justify-center space-y-6">
+      <p class="text-2xl opacity-90">✓ Automated invoices<br>✓ Recurring billing<br>✓ Online payments<br>✓ Revenue dashboard</p>
+      <p class="text-xl opacity-70">Set it once. Get paid forever.</p>
+    </div>
+    <div class="flex justify-center">
+      <div class="bg-white/10 p-12 rounded-3xl glass-card w-full flex justify-around">
+        <i class="fab fa-stripe text-6xl"></i>
+        <i class="fab fa-paypal text-6xl"></i>
+        <i class="fas fa-credit-card text-6xl"></i>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SLIDE 3: OUR SOLUTION -->
-<section class="slide gradient-primary flex flex-col items-center justify-center text-center p-4 sm:p-12">
-  <div class="text-6xl sm:text-9xl mb-8">✅</div>
-  <h2 class="text-3xl sm:text-5xl font-bold mb-8">OUR SOLUTION</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl">
-    <div class="glass-card feature-hover"><i class="fas fa-layer-group text-3xl sm:text-5xl mb-2"></i> Unified Platform</div>
-    <div class="glass-card feature-hover"><i class="fas fa-magic text-3xl sm:text-5xl mb-2"></i> Smart Automation</div>
-    <div class="glass-card feature-hover"><i class="fas fa-users-cog text-3xl sm:text-5xl mb-2"></i> Client & Project Mgmt</div>
-    <div class="glass-card feature-hover"><i class="fas fa-receipt text-3xl sm:text-5xl mb-2"></i> Built-in Billing</div>
-  </div>
-  <p class="text-xl sm:text-3xl mt-12 font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-green-400">Everything in ONE SYSTEM</p>
-</section>
-
-<!-- SLIDE 4: WHAT IS GROW CRM -->
-<section class="slide flex flex-col sm:flex-row items-center justify-around p-4 sm:p-12 gap-6 text-center">
-  <div class="flex-1">
-    <i class="fas fa-users text-5xl sm:text-7xl mb-2"></i>
-    <h3 class="font-bold text-xl sm:text-3xl mb-2">CRM</h3>
-    <p>Lead Management</p>
-  </div>
-  <div class="flex-1">
-    <i class="fas fa-tasks text-5xl sm:text-7xl mb-2"></i>
-    <h3 class="font-bold text-xl sm:text-3xl mb-2">PROJECTS</h3>
-    <p>Task Tracking</p>
-  </div>
-  <div class="flex-1">
-    <i class="fas fa-receipt text-5xl sm:text-7xl mb-2"></i>
-    <h3 class="font-bold text-xl sm:text-3xl mb-2">BILLING</h3>
-    <p>Subscriptions</p>
-  </div>
-</section>
-
-<!-- SLIDE 5: KEY FEATURES -->
-<section class="slide flex flex-col items-center p-4 sm:p-12">
-  <h2 class="text-3xl sm:text-5xl font-bold mb-8">KEY FEATURES</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl">
-    <div class="glass-card feature-hover">Multi-Tenant</div>
-    <div class="glass-card feature-hover">Subscription</div>
-    <div class="glass-card feature-hover">Smart Invoicing</div>
-    <div class="glass-card feature-hover">Task Management</div>
-    <div class="glass-card feature-hover">Time Tracking</div>
-  </div>
-</section>
-
-<!-- SLIDE 6: ARCHITECTURE -->
-<section class="slide gradient-dark flex flex-col items-center p-4 sm:p-12 text-center">
-  <h2 class="text-3xl sm:text-5xl font-bold mb-6">ARCHITECTURE</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-6xl">
-    <div class="glass-card feature-hover"><i class="fas fa-user-shield text-3xl mb-2"></i> SUPER ADMIN</div>
-    <div class="glass-card feature-hover"><i class="fas fa-building text-3xl mb-2"></i> TENANT 1</div>
-    <div class="glass-card feature-hover"><i class="fas fa-building text-3xl mb-2"></i> TENANT N</div>
-  </div>
-  <p class="mt-4">✓ Separate database per client • Unique subdomain • Fully isolated & secure</p>
-</section>
-
-<!-- SLIDE 7: USER ROLES -->
-<section class="slide flex flex-col sm:flex-row items-center justify-around p-4 sm:p-12 text-center gap-6">
-  <div class="glass-card feature-hover">
-    <i class="fas fa-crown text-3xl mb-2"></i>
-    <h3 class="font-bold">SUPER ADMIN</h3>
-    <p>Controls platform, billing setup, tenant management</p>
-  </div>
-  <div class="glass-card feature-hover">
-    <i class="fas fa-building text-3xl mb-2"></i>
-    <h3 class="font-bold">CLIENT</h3>
-    <p>Manages workspace, projects, team</p>
-  </div>
-  <div class="glass-card feature-hover">
-    <i class="fas fa-user-tie text-3xl mb-2"></i>
-    <h3 class="font-bold">TEAM MEMBERS</h3>
-    <p>Execute tasks, time tracking, task completion</p>
-  </div>
-</section>
-
-<!-- SLIDE 8: CORE MODULES -->
-<section class="slide flex flex-wrap justify-center gap-6 p-4 sm:p-12 text-center">
-  <div class="glass-card feature-hover">Projects</div>
-  <div class="glass-card feature-hover">Tasks</div>
-  <div class="glass-card feature-hover">Time Tracking</div>
-  <div class="glass-card feature-hover">Invoices</div>
-  <div class="glass-card feature-hover">Leads</div>
-  <div class="glass-card feature-hover">Support</div>
-  <div class="glass-card feature-hover">Subscriptions</div>
-</section>
-
-<!-- SLIDE 9: PROJECT MANAGEMENT -->
-<section class="slide flex flex-col sm:flex-row items-center gap-6 p-4 sm:p-12">
-  <div class="sm:w-1/2">
-    <img src="https://via.placeholder.com/400x300" class="w-full" alt="Project Screenshot">
-  </div>
-  <div class="sm:w-1/2 space-y-4">
-    <h2 class="text-2xl sm:text-4xl font-bold">PROJECT MANAGEMENT</h2>
-    <ul class="space-y-2">
-      <li>Create & manage projects</li>
-      <li>Milestones & templates</li>
-      <li>Task assignment & progress tracking</li>
-      <li>Client collaboration</li>
+<!-- SLIDE 11: AUTOMATION -->
+<section class="slide gradient-primary text-white p-16 flex flex-col items-center">
+  <h2 class="text-6xl font-black mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200">
+    SMART AUTOMATION
+  </h2>
+  <div class="flex flex-col md:flex-row gap-12 max-w-6xl">
+    <div class="text-8xl">🤖⚡</div>
+    <ul class="text-2xl opacity-90 list-disc pl-8 space-y-4">
+      <li>Recurring invoices</li>
+      <li>Auto project creation</li>
+      <li>Smart notifications</li>
+      <li>Bulk actions</li>
+      <li>Workflow automation</li>
     </ul>
   </div>
 </section>
 
-<!-- SLIDE 10: BILLING SYSTEM -->
-<section class="slide flex flex-col items-center gap-6 p-4 sm:p-12">
-  <h2 class="text-3xl sm:text-5xl font-bold">BILLING SYSTEM</h2>
-  <p>Automated invoices, recurring billing & revenue dashboard</p>
-  <div class="flex gap-6 mt-6 text-4xl">
-    <i class="fab fa-stripe"></i>
-    <i class="fab fa-paypal"></i>
-    <i class="fas fa-credit-card"></i>
-  </div>
-  <p class="mt-6 italic">Set it once. Get paid forever.</p>
-</section>
-
-<!-- SLIDE 11: AUTOMATION -->
-<section class="slide flex flex-col items-center gap-6 p-4 sm:p-12 text-center">
-  <i class="fas fa-robot text-6xl sm:text-8xl"></i>
-  <h2 class="text-3xl sm:text-5xl font-bold">AUTOMATION</h2>
-  <ul class="mt-4 space-y-2">
-    <li>Recurring invoices</li>
-    <li>Auto project creation</li>
-    <li>Smart notifications</li>
-    <li>Bulk actions</li>
-    <li>Workflow automation</li>
-  </ul>
-</section>
-
 <!-- SLIDE 12: USER EXPERIENCE -->
-<section class="slide flex flex-col items-center gap-6 p-4 sm:p-12 text-center">
-  <h2 class="text-3xl sm:text-5xl font-bold">USER EXPERIENCE</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
-    <img src="https://via.placeholder.com/200x150" alt="Dashboard">
-    <img src="https://via.placeholder.com/200x150" alt="Dark Mode">
-    <img src="https://via.placeholder.com/200x150" alt="Drag-Drop">
-    <img src="https://via.placeholder.com/200x150" alt="Filters">
+<section class="slide bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-16 flex flex-col items-center">
+  <h2 class="text-6xl font-black mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200">
+    USER EXPERIENCE
+  </h2>
+  <div class="grid md:grid-cols-4 gap-12 max-w-7xl w-full">
+    <div class="glass-card p-8 rounded-3xl text-center feature-hover">Dashboard</div>
+    <div class="glass-card p-8 rounded-3xl text-center feature-hover">Dark Mode</div>
+    <div class="glass-card p-8 rounded-3xl text-center feature-hover">Drag & Drop</div>
+    <div class="glass-card p-8 rounded-3xl text-center feature-hover">Filters</div>
   </div>
+  <p class="mt-8 text-xl opacity-80">Mobile Responsive, Modern & Clean Interface</p>
 </section>
 
 <!-- SLIDE 13: SECURITY -->
-<section class="slide flex flex-col items-center gap-6 p-4 sm:p-12 text-center">
-  <i class="fas fa-lock text-6xl sm:text-8xl"></i>
-  <h2 class="text-3xl sm:text-5xl font-bold">SECURITY</h2>
-  <ul class="mt-4 space-y-2">
+<section class="slide gradient-dark text-white p-16 flex flex-col items-center">
+  <h2 class="text-6xl font-black mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-200">
+    ENTERPRISE PROTECTION
+  </h2>
+  <ul class="text-2xl opacity-90 list-disc pl-8 space-y-4 max-w-4xl text-center">
     <li>Data isolation per tenant</li>
     <li>Role-based access control</li>
     <li>Secure authentication</li>
@@ -198,57 +64,91 @@ img { border-radius:1rem; }
 </section>
 
 <!-- SLIDE 14: USE CASES -->
-<section class="slide flex flex-wrap justify-center gap-6 p-4 sm:p-12 text-center">
-  <div class="glass-card feature-hover">Agencies - Client projects</div>
-  <div class="glass-card feature-hover">Freelancers - Time tracking</div>
-  <div class="glass-card feature-hover">SaaS Startups - Team collaboration</div>
-  <div class="glass-card feature-hover">Dev Teams - Sprint planning</div>
+<section class="slide gradient-primary text-white p-16 flex flex-col items-center">
+  <h2 class="text-6xl font-black mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200">
+    USE CASES
+  </h2>
+  <div class="grid md:grid-cols-4 gap-12 max-w-7xl w-full text-center">
+    <div class="glass-card p-8 rounded-3xl feature-hover">
+      <i class="fas fa-briefcase text-5xl mb-4"></i>
+      <h3 class="font-bold text-2xl">Agencies</h3>
+      <p>Client projects</p>
+    </div>
+    <div class="glass-card p-8 rounded-3xl feature-hover">
+      <i class="fas fa-user text-5xl mb-4"></i>
+      <h3 class="font-bold text-2xl">Freelancers</h3>
+      <p>Time tracking</p>
+    </div>
+    <div class="glass-card p-8 rounded-3xl feature-hover">
+      <i class="fas fa-layer-group text-5xl mb-4"></i>
+      <h3 class="font-bold text-2xl">SaaS Startups</h3>
+      <p>Team collaboration</p>
+    </div>
+    <div class="glass-card p-8 rounded-3xl feature-hover">
+      <i class="fas fa-laptop-code text-5xl mb-4"></i>
+      <h3 class="font-bold text-2xl">Dev Teams</h3>
+      <p>Sprint planning</p>
+    </div>
+  </div>
 </section>
 
-<!-- SLIDE 15: WHY CHOOSE GROW -->
-<section class="slide flex flex-col items-center gap-6 p-4 sm:p-12 text-center">
-  <h2 class="text-3xl sm:text-5xl font-bold">WHY CHOOSE GROW?</h2>
-  <ul class="mt-4 space-y-2 text-left">
-    <li>✔ ALL-IN-ONE SYSTEM</li>
-    <li>✔ SAAS READY</li>
-    <li>✔ UNLIMITED SCALE</li>
-    <li>✔ FULLY CUSTOMIZABLE</li>
+<!-- SLIDE 15: WHY CHOOSE CRM -->
+<section class="slide gradient-dark text-white p-16 flex flex-col items-center">
+  <h2 class="text-6xl font-black mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-200">
+    WHY CHOOSE THIS CRM?
+  </h2>
+  <ul class="text-3xl opacity-90 list-disc pl-8 space-y-4 text-center max-w-4xl">
+    <li>ALL-IN-ONE SYSTEM</li>
+    <li>SAAS READY</li>
+    <li>UNLIMITED SCALE</li>
+    <li>FULLY CUSTOMIZABLE</li>
   </ul>
-  <p class="mt-4 italic">Stop cobbling together tools</p>
+  <p class="mt-8 text-xl opacity-70">Stop cobbling together multiple tools</p>
 </section>
 
 <!-- SLIDE 16: BUSINESS OPPORTUNITY -->
-<section class="slide flex flex-col items-center gap-6 p-4 sm:p-12 text-center">
-  <h2 class="text-3xl sm:text-5xl font-bold">BUSINESS OPPORTUNITY</h2>
-  <ul class="mt-4 space-y-2">
-    <li>💰 Launch your SaaS</li>
-    <li>📈 Recurring Revenue</li>
-    <li>🌍 Unlimited Clients</li>
-    <li>⚡ Quick Setup</li>
-    <li>🚀 Passive Income</li>
-  </ul>
+<section class="slide gradient-primary text-white p-16 flex flex-col items-center">
+  <h2 class="text-6xl font-black mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200">
+    BUSINESS OPPORTUNITY
+  </h2>
+  <div class="grid md:grid-cols-2 gap-12 max-w-6xl w-full">
+    <div class="flex flex-col justify-center space-y-6">
+      <p class="text-2xl opacity-90">💰 Launch your SaaS<br>📈 Recurring Revenue<br>🌍 Unlimited Clients<br>⚡ Quick Setup<br>🚀 Passive Income</p>
+    </div>
+    <div class="flex justify-center">
+      <div class="bg-white/10 p-12 rounded-3xl glass-card w-full h-full flex items-center justify-center">
+        <i class="fas fa-chart-line text-9xl text-green-300"></i>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- SLIDE 17: FUTURE VISION -->
-<section class="slide flex flex-col items-center gap-6 p-4 sm:p-12 text-center">
-  <h2 class="text-3xl sm:text-5xl font-bold">FUTURE VISION</h2>
-  <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-6">
-    <div>Q1 2024 - Mobile Apps</div>
-    <div>Q2 2024 - API Integrations</div>
-    <div>Q3 2024 - Analytics</div>
-    <div>Q4 2024 - AI Features</div>
+<section class="slide gradient-dark text-white p-16 flex flex-col items-center">
+  <h2 class="text-6xl font-black mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-200">
+    FUTURE VISION
+  </h2>
+  <div class="grid grid-cols-4 gap-12 max-w-6xl w-full text-center">
+    <div class="glass-card p-6 rounded-3xl feature-hover">Q1 2026<br>Mobile Apps</div>
+    <div class="glass-card p-6 rounded-3xl feature-hover">Q2 2026<br>API Integrations</div>
+    <div class="glass-card p-6 rounded-3xl feature-hover">Q3 2026<br>Analytics</div>
+    <div class="glass-card p-6 rounded-3xl feature-hover">Q4 2026<br>AI Features</div>
   </div>
-  <p class="mt-4 italic">Built to grow with you</p>
+  <p class="mt-8 text-xl opacity-70">Built to scale with your business</p>
 </section>
 
 <!-- SLIDE 18: CLOSING -->
-<section class="slide gradient-primary flex flex-col items-center justify-center text-center p-4 sm:p-12">
-  <img src="https://via.placeholder.com/200x200?text=🚀" alt="Rocket Launch" class="mb-6">
-  <h1 class="text-5xl sm:text-7xl font-black mb-6">GROW CRM SAAS</h1>
-  <p class="text-xl sm:text-3xl mb-6">Your Complete Business Solution</p>
-  <h2 class="text-3xl sm:text-5xl font-bold mb-6">BUILD. MANAGE. SCALE.</h2>
-  <button class="px-6 py-3 text-lg sm:text-xl font-bold bg-yellow-400 text-gray-900 rounded-xl hover:bg-yellow-300 transition">START YOUR SAAS TODAY</button>
+<section class="slide gradient-primary text-white flex flex-col items-center justify-center p-16">
+  <div class="text-center max-w-6xl">
+    <div class="text-9xl mb-12">🚀</div>
+    <h2 class="text-6xl font-black mb-8 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200">
+      CRM SaaS
+    </h2>
+    <p class="text-3xl opacity-90 mb-12">Your Complete Business Solution</p>
+    <p class="text-2xl opacity-80 mb-12">BUILD. MANAGE. SCALE.</p>
+    <button class="px-12 py-6 bg-white/20 backdrop-blur-sm rounded-3xl text-xl font-bold hover:bg-white/30 transition-all">
+      START YOUR SAAS TODAY
+    </button>
+    <p class="mt-8 opacity-70 text-lg">contact@company.com | +1 234 567 890</p>
+  </div>
 </section>
-
-</body>
-</html>
