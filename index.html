@@ -37,6 +37,69 @@ body { overflow-x: hidden; }
 @keyframes pulse { 0%, 100% { box-shadow: 0 0 20px rgba(107,70,193,0.5); } 50% { box-shadow: 0 0 40px rgba(107,70,193,0.8); } }
 .feature-hover:hover { transform: translateY(-10px) scale(1.05); }
 </style>
+<style>
+@media (max-width: 768px) {
+    .slide {
+        padding: 2rem 1rem;
+        height: auto;
+        min-height: 100vh;
+    }
+    .text-9xl { font-size: 4rem !important; }
+    .text-8xl { font-size: 3.5rem !important; }
+    .text-7xl { font-size: 3rem !important; }
+    .text-6xl { font-size: 2.5rem !important; }
+    .text-5xl { font-size: 2rem !important; }
+    .text-4xl { font-size: 1.75rem !important; }
+    .text-3xl { font-size: 1.5rem !important; }
+    .text-2xl { font-size: 1.25rem !important; }
+    .text-xl { font-size: 1rem !important; }
+    .grid-cols-2, .md\\:grid-cols-2, .lg\\:grid-cols-2,
+    .grid-cols-3, .md\\:grid-cols-3, .lg\\:grid-cols-3,
+    .grid-cols-4, .md\\:grid-cols-4, .lg\\:grid-cols-4,
+    .grid-cols-5, .md\\:grid-cols-5, .lg\\:grid-cols-5 {
+        grid-template-columns: 1fr !important;
+    }
+    .fixed.right-8 {
+        right: 1rem;
+        top: auto;
+        bottom: 2rem;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+    }
+    .fixed.right-8 > div {
+        width: 8px;
+        height: 8px;
+        margin: 0 2px;
+    }
+    .space-y-3 {
+        flex-direction: row !important;
+        justify-content: center;
+        gap: 4px;
+    }
+    .glass-card {
+        padding: 1rem !important;
+    }
+    .max-w-7xl, .max-w-6xl, .max-w-5xl {
+        max-width: 100% !important;
+    }
+    .p-12 { padding: 2rem !important; }
+    .p-16 { padding: 2rem !important; }
+    .p-20 { padding: 2rem !important; }
+    .mb-12 { margin-bottom: 2rem !important; }
+    .mb-16 { margin-bottom: 2rem !important; }
+    .mb-20 { margin-bottom: 2rem !important; }
+    .mb-24 { margin-bottom: 2rem !important; }
+    .gap-12 { gap: 1rem !important; }
+    .gap-16 { gap: 1rem !important; }
+    .gap-20 { gap: 1rem !important; }
+    .gap-6 { gap: 0.5rem !important; }
+    .gap-8 { gap: 0.5rem !important; }
+}
+</style>
 </head>
 <body class="bg-gradient-to-br from-purple-500 to-indigo-600 overflow-hidden">
 
