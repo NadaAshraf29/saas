@@ -62,7 +62,8 @@ body { overflow-x: hidden; }
     .grid, .grid-cols-2, .md\:grid-cols-2, .lg\:grid-cols-2,
     .grid-cols-3, .md\:grid-cols-3, .lg\:grid-cols-3,
     .grid-cols-4, .md\:grid-cols-4, .lg\:grid-cols-4,
-    .grid-cols-5, .md\:grid-cols-5, .lg\:grid-cols-5 {
+    .grid-cols-5, .md\:grid-cols-5, .lg\:grid-cols-5,
+    .md\:grid-cols-8, .lg\:grid-cols-8 {
         grid-template-columns: 1fr !important;
     }
     .fixed.right-8 {
@@ -103,6 +104,7 @@ body { overflow-x: hidden; }
     .p-12, .p-16, .p-20 { padding: 2rem !important; }
     .mb-12, .mb-16, .mb-20, .mb-24 { margin-bottom: 2rem !important; }
     .gap-6, .gap-8, .gap-12, .gap-16, .gap-20 { gap: 1rem !important; }
+    .md\:grid-cols-8 { grid-template-columns: repeat(4, 1fr) !important; }
 }
 
 /* Laptop/Desktop styles */
@@ -287,7 +289,7 @@ body { overflow-x: hidden; }
   </h2>
   <div class="flex flex-col items-center space-y-12">
     <div class="text-4xl font-bold">SUPER ADMIN</div>
-    <div class="flex gap-16">
+    <div class="flex flex-col md:flex-row gap-4 md:gap-16">
       <div class="flex flex-col items-center gap-4">
         <div class="glass-card p-12 rounded-3xl">TENANT 1<br><i class="fas fa-database text-3xl mt-4"></i></div>
       </div>
@@ -345,7 +347,7 @@ body { overflow-x: hidden; }
   <h2 class="text-6xl font-black mb-16 bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200">
     CORE MODULES
   </h2>
-  <div class="grid grid-cols-4 md:grid-cols-8 gap-12 max-w-7xl">
+  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6 md:gap-12 max-w-7xl">
     <div class="flex flex-col items-center gap-4">
       <i class="fas fa-tasks text-5xl"></i>
       <span>Projects</span>
@@ -532,7 +534,7 @@ body { overflow-x: hidden; }
   <h2 class="text-6xl font-black mb-12 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-200">
     FUTURE VISION
   </h2>
-  <div class="grid grid-cols-4 gap-12 max-w-6xl w-full text-center">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 max-w-6xl w-full text-center">
     <div class="glass-card p-6 rounded-3xl feature-hover">Q1 2026<br>Mobile Apps</div>
     <div class="glass-card p-6 rounded-3xl feature-hover">Q2 2026<br>API Integrations</div>
     <div class="glass-card p-6 rounded-3xl feature-hover">Q3 2026<br>Analytics</div>
